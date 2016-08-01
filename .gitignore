@@ -12,5 +12,6 @@ bin/**
 .metadata
 .settings/
 .loadpath
+.mvn/
 
 
