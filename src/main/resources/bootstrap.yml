@@ -1,0 +1,19 @@
+server:
+  port: ${APP_PORT:8080}
+  
+spring:
+  application:
+    name: test-service 
+  cloud:
+    config:
+      name: foo
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+      label: ${CONFIG_LABEL:master}
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761}/eureka/
+  instance:
+    preferIpAddress: true
+      
